@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Sea Recovery and Auction | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/micah.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-box">
+      <img src="Micah images/logo.png" alt="Deep Sea Recovery and Auction logo">
+    </div>
 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="black-pearl.html">Black Pearl</a>
+      <a href="chicxulub.html">Chicxulub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="Micah images/Greeneville.jpg" alt="Greenville Salvage Yard featured recovery">
+      <div class="hero-text">
+        <h1>Greenville Salvage Yard</h1>
+      </div>
+      <p class="featured-note">Featured: Red October - Sold 2024</p>
+    </section>
+
+    <section class="intro">
+      <h2>Deep Sea Recovery and Auction</h2>
+      <p>
+        At Greenville Recovery Yard, we search the sea floor of lost relics of the past
+        (and future). Our team has located and recovered artifacts spanning centuries of
+        human history and legend. All recovered assets are auctioned for the enrichment
+        of mankind and to support future operations.
+      </p>
+    </section>
+
+    <section class="salvages">
+      <h2>Current Salvages:</h2>
+
+      <div class="salvage-grid">
+        <article class="salvage-card">
+          <h3>The Black Pearl</h3>
+          <img src="Micah images/blackpearl.jpg" alt="The Black Pearl ship">
+          <p>Recovered near Bermuda.</p>
+          <a href="black-pearl.html">Learn More</a>
+        </article>
+
+        <article class="salvage-card">
+          <h3>Chicxulub Meteorite</h3>
+          <img src="Micah images/chicxulub1.jpg" alt="Chicxulub meteorite">
+          <p>Roy Clarke, Jr. pictured verifying that this meteorite killed the dinosaurs.</p>
+          <a href="chicxulub.html">Learn More</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Deep Sea Recovery and Auction</p>
+  </footer>
+</body>
+</html>
