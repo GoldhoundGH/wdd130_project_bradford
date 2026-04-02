@@ -1,69 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deep Sea Recovery and Auction | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/micah.css" />
-</head>
-<body>
-  <header>
-    <div class="logo-box">
-      <img src="Micah images/logo.png" alt="Deep Sea Recovery and Auction logo">
-    </div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="black-pearl.html">Black Pearl</a>
-      <a href="chicxulub.html">Chicxulub</a>
-    </nav>
-  </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <main>
-    <section class="hero">
-      <img src="Micah images/Greeneville.jpg" alt="Greenville Salvage Yard featured recovery">
-      <div class="hero-text">
-        <h1>Greenville Salvage Yard</h1>
-      </div>
-      <p class="featured-note">Featured: Red October - Sold 2024</p>
-    </section>
+body {
+  overflow-x: hidden;
+}
+.mainpagecolor {
+    background-color: #D4F5FF;
+}
 
-    <section class="intro">
-      <h2>Deep Sea Recovery and Auction</h2>
-      <p>
-        At Greenville Recovery Yard, we search the sea floor of lost relics of the past
-        (and future). Our team has located and recovered artifacts spanning centuries of
-        human history and legend. All recovered assets are auctioned for the enrichment
-        of mankind and to support future operations.
-      </p>
-    </section>
+h1, h2, h3 {
+  font-family: 'Georgia', Arial, serif;
+}
 
-    <section class="salvages">
-      <h2>Current Salvages:</h2>
+p {
+  font-family: 'Roboto', Arial, serif;
+}
 
-      <div class="salvage-grid">
-        <article class="salvage-card">
-          <h3>The Black Pearl</h3>
-          <img src="Micah images/blackpearl.jpg" alt="The Black Pearl ship">
-          <p>Recovered near Bermuda.</p>
-          <a href="black-pearl.html">Learn More</a>
-        </article>
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #44FFD2;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
-        <article class="salvage-card">
-          <h3>Chicxulub Meteorite</h3>
-          <img src="Micah images/chicxulub1.jpg" alt="Chicxulub meteorite">
-          <p>Roy Clarke, Jr. pictured verifying that this meteorite killed the dinosaurs.</p>
-          <a href="chicxulub.html">Learn More</a>
-        </article>
-      </div>
-    </section>
-  </main>
+header img {
+  width: auto;
+  height: 50px;
+}
 
-  <footer>
-    <p>&copy; 2026 Deep Sea Recovery and Auction</p>
-  </footer>
-</body>
-</html>
+.logo-box {
+  margin-left: 50px;
+  grid-column: 1;
+  justify-self: start;
+}
+
+header nav {
+  display: flex;
+  grid-column:2;
+  gap: 30px;
+  justify-content: center;
+  
+}
+
+header nav a {
+  text-decoration: none;
+  color: #4128b2;
+  font-family: 'Roboto', Arial, serif;
+  font-size: 20px;
+  background-color: #BFFFA1;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+header nav a {
+  transition: all 0.2s ease;
+}
+
+header nav a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* The black pearl CSS */
+
+.The-black-pearl {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+
+
+.image-container1 {
+  position: relative;
+  width: 1000px;
+  max-width: 100%;
+  height: 480px;
+  margin: 0;
+  
+}
+
+.image-container1 h1 {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  font-weight: 100;
+  font-size: 25px;
+
+}
+
+.image-container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1-content {
+  text-align: right;
+  
+  width: 1000px;
+  height: 25px;
+  background-color: #BFFFA1;
+  color: #4128b2;
+  padding-top: 5px;
+  
+}
+
+.About-blackpearl {
+  width: 1400px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  margin-top: -20px;
+  background-color: #87F6FF;
+
+
+}
+
+.f-title {
+  display: inline-block;
+  border-bottom: 2px solid #4128b2;
+  padding-bottom: 0.1px;
+  padding-right: 100px;
+  padding-left: 100px;
+  color: #4128b2;
+  font-weight: 400;
+  font-size: 40px;
+
+  
+}
+
+.f-titlecontainer {
+  text-align: center;
+  padding-top: 10px;
+  
+  
+}
+
+.f-content {
+  text-align: center;
+  color: #4128b2;
+  padding-top: 40px;
+  font-size: 23px;
+  
+
+}
+
+.Recovery-blackpearl {
+  width: 1400px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  margin-top: 0px;
+  background-color: #44FFD2;
+
+}
+
+.s-title {
+  display: inline-block;
+  border-bottom: 2px solid #4128b2;
+  padding-bottom: 0.1px;
+  padding-right: 100px;
+  padding-left: 100px;
+  color: #4128b2;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.s-titlecontainer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.s-content {
+  text-align: center;
+  color: #4128b2;
+  padding-top: 40px;
+  font-size: 23px;
+}
+
+.image-container2 {
+  margin: 20px auto;
+  width: 400px;
+  height: 300px;
+  background-color: #BFFFA1;
+  padding: 15px;
+  margin-left: 300px;
+  
+}
+
+.image2-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-top: 20px;
+
+}
+
+.image2-content {
+  margin-right: 200px;
+  color: #4128b2;
+  max-height: 300px;
+  max-width: 500;
+  font-size: 14px;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Auction-blackpearl {
+  width: 1400px;
+  margin: 40px auto;
+  text-align: center;
+  margin-top: 0px;
+  background-color: #87F6FF;
+  padding-bottom: 50px;
+}
+
+.t-titlecontainer {
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.t-title {
+  display: inline-block;
+  border-bottom: 2px solid #4128b2;
+  padding-right: 100px;
+  padding-left: 100px;
+  color: #4128b2;
+  font-weight: 400;
+  font-size: 40px;
+
+}
+
+.t-content1 {
+  text-align: center;
+  color: #4128b2;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+.t-content2 {
+  text-align: center;
+  color: #4128b2;
+  padding-top: 40px;
+  font-size: 21px;
+  margin-bottom: 10px;
+
+}
+
+.t-content2 p:first-child {
+  margin-bottom: 20px;
+}
